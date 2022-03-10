@@ -1,0 +1,251 @@
+{
+   "Format": "1.25.0",
+   "Changes": [
+      {
+         "LogName": "Edit Flooring for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png"
+      },
+      {
+         "LogName": "Edit Flooring for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png"
+      },
+      {
+         "LogName": "Wood Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 256,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Stone Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 272,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Weathered Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 304,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Crystal Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 336,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Straw Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 272,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Gravel Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 368,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Wood Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 336,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Crystal Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 16,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Cobblestone Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 48,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 112,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Brick Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 80,
+            "Y": 192,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Rustic Plank Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 560,
+            "Width": 16,
+            "Height": 16
+         }
+      },
+      {
+         "LogName": "Stone Walkway Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 16,
+            "Y": 560,
+            "Width": 16,
+            "Height": 16
+         }
+      }
+   ]
+}

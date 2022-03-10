@@ -1,0 +1,12 @@
+{
+   "Name": "Ellie's Seasonal Paths & Flooring",
+   "Author": "EllieBellaLuna",
+   "Version": "1.0.0",
+   "Description": "Updates the craftable paths and flooring in a new style with seasonal versions.",
+   "UniqueID": "EllieBellaLuna.SeasonalPathsAndFlooring",
+   "MinimumApiVersion": "3.0.0",
+   "UpdateKeys": [],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

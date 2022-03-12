@@ -1,203 +1,69 @@
 {
    "Format": "1.25.0",
+   "ConfigSchema": {
+      "Use Seasonal Versions": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Brick Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Crystal Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Rustic Plank Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Stone Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Stone Walkway Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Straw Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Weathered Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Wood Floor": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Cobblestone Path": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Crystal Path": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Gravel Path": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Stepping Stone Path": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      },
+      "Replace Wood Path": {
+         "AllowValues": "true, false",
+         "Default": "true"
+      }
+   },
    "Changes": [
-      {
-         "LogName": "Edit Flooring for seasons",
-         "Action": "EditImage",
-         "Target": "TerrainFeatures/Flooring",
-         "FromFile": "assets/Flooring_{{season}}.png"
-      },
-      {
-         "LogName": "Edit Flooring for winter",
-         "Action": "EditImage",
-         "Target": "TerrainFeatures/Flooring_winter",
-         "FromFile": "assets/Flooring_winter.png"
-      },
-      {
-         "LogName": "Wood Floor Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 0,
-            "Y": 0,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 256,
-            "Y": 208,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Stone Floor Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 64,
-            "Y": 0,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 272,
-            "Y": 208,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Weathered Floor Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 128,
-            "Y": 0,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 304,
-            "Y": 208,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Crystal Floor Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 192,
-            "Y": 0,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 336,
-            "Y": 208,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Straw Floor Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 0,
-            "Y": 64,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 272,
-            "Y": 256,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Gravel Path Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 64,
-            "Y": 64,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 368,
-            "Y": 256,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Wood Path Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 128,
-            "Y": 64,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 336,
-            "Y": 256,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Crystal Path Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 192,
-            "Y": 64,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 16,
-            "Y": 272,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Cobblestone Path Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 0,
-            "Y": 128,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 48,
-            "Y": 272,
-            "Width": 16,
-            "Height": 16
-         }
-      },
-      {
-         "LogName": "Stepping Stone Path Icon",
-         "Action": "EditImage",
-         "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
-         "FromArea": {
-            "X": 64,
-            "Y": 128,
-            "Width": 16,
-            "Height": 16
-         },
-         "ToArea": {
-            "X": 112,
-            "Y": 272,
-            "Width": 16,
-            "Height": 16
-         }
-      },
       {
          "LogName": "Brick Floor Icon",
          "Action": "EditImage",
          "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
+         "FromFile": "assets/Flooring_spring.png",
          "FromArea": {
             "X": 128,
             "Y": 128,
@@ -209,13 +75,213 @@
             "Y": 192,
             "Width": 16,
             "Height": 16
+         },
+         "When": {
+            "Replace Brick Floor": "true"
+         }
+      },
+      {
+         "LogName": "Brick Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Brick Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Brick Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Brick Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Brick Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Brick Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Brick Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Brick Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 336,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Crystal Floor": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Crystal Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Crystal Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Floor": "true",
+            "Use Seasonal Versions": "true"
          }
       },
       {
          "LogName": "Rustic Plank Floor Icon",
          "Action": "EditImage",
          "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
+         "FromFile": "assets/Flooring_spring.png",
          "FromArea": {
             "X": 192,
             "Y": 128,
@@ -227,13 +293,213 @@
             "Y": 560,
             "Width": 16,
             "Height": 16
+         },
+         "When": {
+            "Replace Rustic Plank Floor": "true"
+         }
+      },
+      {
+         "LogName": "Rustic Plank Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Rustic Plank Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Rustic Plank Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Rustic Plank Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Rustic Plank Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Rustic Plank Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Rustic Plank Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Rustic Plank Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Stone Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 272,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Stone Floor": "true"
+         }
+      },
+      {
+         "LogName": "Stone Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stone Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stone Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Stone Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Floor": "true",
+            "Use Seasonal Versions": "true"
          }
       },
       {
          "LogName": "Stone Walkway Floor Icon",
          "Action": "EditImage",
          "Target": "Maps/springobjects",
-         "FromFile": "assets/Flooring.png",
+         "FromFile": "assets/Flooring_spring.png",
          "FromArea": {
             "X": 0,
             "Y": 192,
@@ -245,6 +511,969 @@
             "Y": 560,
             "Width": 16,
             "Height": 16
+         },
+         "When": {
+            "Replace Stone Walkway Floor": "true"
+         }
+      },
+      {
+         "LogName": "Stone Walkway Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Walkway Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stone Walkway Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Walkway Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stone Walkway Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Walkway Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Stone Walkway Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 192,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stone Walkway Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Straw Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 272,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Straw Floor": "true"
+         }
+      },
+      {
+         "LogName": "Straw Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Straw Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Straw Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Straw Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Straw Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Straw Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Straw Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Straw Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Weathered Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 304,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Weathered Floor": "true"
+         }
+      },
+      {
+         "LogName": "Weathered Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Weathered Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Weathered Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Weathered Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Weathered Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Weathered Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Weathered Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Weathered Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Wood Floor Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 256,
+            "Y": 208,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Wood Floor": "true"
+         }
+      },
+      {
+         "LogName": "Wood Floor base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Wood Floor base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Floor": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Wood Floor for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Wood Floor for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 0,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Floor": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Cobblestone Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 48,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Cobblestone Path": "true"
+         }
+      },
+      {
+         "LogName": "Cobblestone Path base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Cobblestone Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Cobblestone Path base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Cobblestone Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Cobblestone Path for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Cobblestone Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Cobblestone Path for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 0,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Cobblestone Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 16,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Crystal Path": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Path base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Crystal Path base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Crystal Path for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Crystal Path for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 192,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Crystal Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Gravel Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 368,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Gravel Path": "true"
+         }
+      },
+      {
+         "LogName": "Gravel Path base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Gravel Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Gravel Path base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Gravel Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Gravel Path for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Gravel Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Gravel Path for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Gravel Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 112,
+            "Y": 272,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Stepping Stone Path": "true"
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stepping Stone Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stepping Stone Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stepping Stone Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Stepping Stone Path for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 64,
+            "Y": 128,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Stepping Stone Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Wood Path Icon",
+         "Action": "EditImage",
+         "Target": "Maps/springobjects",
+         "FromFile": "assets/Flooring_spring.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 16,
+            "Height": 16
+         },
+         "ToArea": {
+            "X": 336,
+            "Y": 256,
+            "Width": 16,
+            "Height": 16
+         },
+         "When": {
+            "Replace Wood Path": "true"
+         }
+      },
+      {
+         "LogName": "Wood Path base version",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Wood Path base version for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_summer.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Path": "true",
+            "Use Seasonal Versions": "false"
+         }
+      },
+      {
+         "LogName": "Wood Path for seasons",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring",
+         "FromFile": "assets/Flooring_{{season}}.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Path": "true",
+            "Use Seasonal Versions": "true"
+         }
+      },
+      {
+         "LogName": "Wood Path for winter",
+         "Action": "EditImage",
+         "Target": "TerrainFeatures/Flooring_winter",
+         "FromFile": "assets/Flooring_winter.png",
+         "FromArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "ToArea": {
+            "X": 128,
+            "Y": 64,
+            "Width": 64,
+            "Height": 64
+         },
+         "When": {
+            "Replace Wood Path": "true",
+            "Use Seasonal Versions": "true"
          }
       }
    ]
